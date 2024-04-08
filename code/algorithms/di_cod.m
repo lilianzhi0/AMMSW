@@ -1,9 +1,7 @@
-function [l_avg, l_ans, err_max, cost] = di_cod(X, Y, L_number, N, gap, flag_time)
+function [l_avg, l_ans, err_max, cost] = di_cod(X, Y, L_number, N, gap, flag_time, RX, RY)
     tic;
     [mx, n] = size(X);
     my = size(Y, 1);
-    RX = 773;
-    RY = 618;
     l_avg = 0;
     err_avg = 0;
     err_max = 0;
