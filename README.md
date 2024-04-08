@@ -1,1 +1,1 @@
-# AMMSW
+# ApproximateMatrixMultiplicationoverSlidingWindows
