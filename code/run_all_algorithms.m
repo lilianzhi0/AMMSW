@@ -18,10 +18,10 @@ for i=1: length(ll)
     L = ll(i);
     fprintf('data=%s N=%d level = %d\n', filename, N, L);
     
-    [l_avg(1, i), max_size(1, i), err_avg(1, i), cost(1, i)] = di_cod(X, Y, L, N, gap, flag_time);
+    [l_avg(1, i), max_size(1, i), err_avg(1, i), cost(1, i)] = di_cod(X, Y, L, N, gap, flag_time, RX, RY);
     fprintf('DI-COD: l_avg = %d, max_size = %d, error = %f time = %f\n', l_avg(1, i), max_size(1, i), err_avg(1, i), cost(1, i));
 
-    [l_avg(2, i), max_size(2, i), err_avg(2, i), cost(2, i)] = di_scod(X, Y, L, N, gap, q, flag_time);
+    [l_avg(2, i), max_size(2, i), err_avg(2, i), cost(2, i)] = di_scod(X, Y, L, N, gap, q, flag_time, RX, RY);
     fprintf('DI-SCOD: l_avg = %d, max_size = %d, error = %f time = %f\n', l_avg(2, i), max_size(2, i), err_avg(2, i), cost(2, i));
 
 end
