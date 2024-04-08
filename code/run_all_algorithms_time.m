@@ -19,10 +19,10 @@ for i=1: length(ll)
     l_avg(1, i) = L;
     l_avg(2, i) = L;
     
-    [~, ~, ~, cost(1, i)] = di_cod(X, Y, L, N, gap, flag_time);
+    [~, ~, ~, cost(1, i)] = di_cod(X, Y, L, N, gap, flag_time, RX, RY);
     fprintf('DI-COD: L = %d, time = %f\n', L, cost(1, i));
 
-    [~, ~, ~, cost(2, i)] = di_scod(X, Y, L, N, gap, q, flag_time);
+    [~, ~, ~, cost(2, i)] = di_scod(X, Y, L, N, gap, q, flag_time, RX, RY);
     fprintf('DI-SCOD: L = %d, time = %f\n', L, cost(2, i));
 end
 
