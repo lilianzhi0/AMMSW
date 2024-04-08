@@ -5,6 +5,10 @@
 setup;
 
 filename = 'apr'; % set dataset
+
+% RX and RY of apr
+RX = 773;
+RY = 618;
 mm = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 30, 40, 50, 80, 100, 150, 200, 250, 300, 350, 400]; % set sketch size
 ll = [6, 7, 8, 9, 10, 11]; % set level size
 q = 5; % set iteration number of subspace power method
